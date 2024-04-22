@@ -9,7 +9,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div>
+
+      <div className="side">
         <Sidebar />
         <Routes>
           <Route index element={<HomeScreen />} />

@@ -42,6 +42,22 @@
   width: 200;
   height: 200;
   border-radius: 50%;
-  
 
+
+}
+
+.header{
+  margin: 0px;
+  /* padding: 0; */
+}
+
+.side{
+  display: grid;
+  grid-template-columns: 12% 82%;
+  margin-top: 5px;
+  
+}
+.sidebar:hover{
+  background-color: azure;
+  transform: scale(1.2);
 }
