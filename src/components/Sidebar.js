@@ -99,6 +99,7 @@ export default function Sidebar() {
           Librery
         </div>
       </li>
+      <hr className="bg-black-800" />
       <li className="sidebar p-5  rounded-md">
         <div className="flex gap-2">
           <svg
@@ -118,6 +119,7 @@ export default function Sidebar() {
           Logout
         </div>
       </li>
+      <hr />
     </div>
   );
 }
