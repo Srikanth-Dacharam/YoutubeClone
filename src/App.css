@@ -47,8 +47,12 @@
 }
 
 .header{
+  position: ;
   margin: 0px;
   /* padding: 0; */
+}
+.mainside{
+  position: sticky;
 }
 
 .side{
@@ -59,5 +63,28 @@
 }
 .sidebar:hover{
   background-color: azure;
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+.map{
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 300px 300px 300px 300px;
+}
+.card{
+  width: 250px; 
+  border-top: 4px solid teal;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: white;
+}
+.card:hover{
   transform: scale(1.2);
 }

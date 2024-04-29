@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Sidebar() {
   return (
-    <div className=" border-black-500 border-solid bg-teal-200 rounded-md list-none p-5">
+    <div className=" mainside border-black-500 border-solid bg-teal-200 rounded-md list-none p-5">
       <li className=" sidebar flex ml-6  gap-2  rounded-md ">
         <div className="flex gap-2">
           <svg
