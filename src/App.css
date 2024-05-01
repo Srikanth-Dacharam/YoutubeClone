@@ -1,3 +1,7 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
 .App {
   text-align: center;
 }
@@ -50,9 +54,13 @@
   position: ;
   margin: 0px;
   /* padding: 0; */
+  position: fixed;
 }
 .mainside{
-  position: sticky;
+  margin-top: 50px;
+  position: fixed;
+  height:800px;
+  width: 200px;
 }
 
 .side{
@@ -71,13 +79,14 @@
 
 
 
-
-
 .map{
+  margin-top:50px;
+  margin-left: 200px;
   display: grid;
-  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-columns: 265px 265px 265px 265px 265px;
   grid-template-rows: 300px 300px 300px 300px;
-}
+}   
+
 .card{
   width: 250px; 
   border-top: 4px solid teal;

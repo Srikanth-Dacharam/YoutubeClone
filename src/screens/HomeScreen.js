@@ -115,6 +115,7 @@
 // export default YoutubeData;
 
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const YoutubeData = () => {
   const [videos, setVideos] = useState([]);
@@ -148,13 +149,19 @@ const YoutubeData = () => {
       {/* <h1>YouTube Videos</h1> */}
       <ul className="map">
         {videos.map((video) => (
-          <div className="card shadow-md rounded-md p-2  h-50 md:grid-cols-2 md:items-center  ">
-            <img
-              src={video.snippet.thumbnails.medium.url}
-              alt={video.snippet.title}
-            />
-            <li key={video.id.videoId}>{video.snippet.title}</li>
-          </div>
+          <Link to={`/Video${video.videoid}`} key={video.id}>
+            <div className="card shadow-md rounded-md p-2  h-50 md:grid-cols-2 md:items-center  ">
+              <img
+                src={video.snippet.thumbnails.medium.url}
+                alt={video.snippet.title}
+                key={video.id}
+              />
+              <li className="font-bold" key={video.id.videoId}>
+                {video.snippet.title}
+              </li>
+              <li>Channel : {video.snippet.channelTitle}</li>
+            </div>
+          </Link>
         ))}
       </ul>
     </div>

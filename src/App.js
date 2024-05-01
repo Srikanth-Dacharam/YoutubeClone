@@ -4,6 +4,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import HomeScreen from "./screens/HomeScreen";
+import Video from "./components/Video";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Sidebar />
         <Routes>
           <Route index element={<HomeScreen />} />
+
+          <Route path="Video" element={<Video />} />
         </Routes>
       </div>
     </div>
