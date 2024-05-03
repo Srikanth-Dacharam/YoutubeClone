@@ -16,7 +16,8 @@ function App() {
         <Routes>
           <Route index element={<HomeScreen />} />
 
-          <Route path="Video" element={<Video />} />
+          <Route path="Videos/:videoId" element={<Video />} />
+          {/* <Route path="/Video" component={Video} /> */}
         </Routes>
       </div>
     </div>

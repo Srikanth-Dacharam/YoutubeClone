@@ -149,7 +149,7 @@ const YoutubeData = () => {
       {/* <h1>YouTube Videos</h1> */}
       <ul className="map">
         {videos.map((video) => (
-          <Link to={`/Video${video.videoid}`} key={video.id}>
+          <Link to={`/Videos/${video.id.videoId}`} key={video.videoId}>
             <div className="card shadow-md rounded-md p-2  h-50 md:grid-cols-2 md:items-center  ">
               <img
                 src={video.snippet.thumbnails.medium.url}

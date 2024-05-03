@@ -83,9 +83,30 @@
   margin-top:50px;
   margin-left: 200px;
   display: grid;
-  grid-template-columns: 265px 265px 265px 265px 265px;
+  grid-template-columns: 263px 263px 263px 263px 263px;
   grid-template-rows: 300px 300px 300px 300px;
 }   
+
+.video-main{
+  margin-top:50px;
+  margin-left: 300px;
+  width: 500px;
+  height: 300px;
+  display: grid;
+
+  /* grid-template-columns: 263px 263px 263px 263px 263px;
+  grid-template-rows: 300px 300px 300px 300px; */
+}
+.sub{
+  margin-top:50px;
+  margin-left: 400px;
+  
+}
+
+.video-img{
+  
+  
+}
 
 .card{
   width: 250px; 
@@ -96,4 +117,8 @@
 }
 .card:hover{
   transform: scale(1.2);
+}
+.discription{
+  font-size: 100%;
+  width: 1000px;
 }
