@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { YoutubeData } from "../screens/HomeScreen";
+import { useDispatch } from "react-redux";
+import { useNavigate, useParams } from "react-router-dom";
+import { addSubscibe } from "./CartSlice";
+// import { YoutubeData } from "../screens/HomeScreen";
 
 const Video = () => {
   const [video, setVideo] = useState(null);
   const { videoId } = useParams();
+  const [subscribed, setsubscribed] = useState(false);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchVideo = async () => {
@@ -34,6 +39,11 @@ const Video = () => {
   if (!video) {
     return <div>Loading...</div>;
   }
+  const handleSubscribe = () => {
+    dispatch(addSubscibe(video));
+    setsubscribed(subscribed);
+    navigate("/Subscribe");
+  };
 
   return (
     <div>
@@ -84,7 +94,14 @@ const Video = () => {
                   </div>
                   <div className="flex  gap-7 ">
                     <h2 className=" font-bold px-4 py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600">
-                      Subscribe
+                      <button
+                        onClick={handleSubscribe}
+                        className={`ui button ${
+                          subscribed ? "red" : "primary"
+                        }`}
+                      >
+                        {subscribed ? "Subscribed" : "Subscribe"}
+                      </button>
                     </h2>
                     <h2>
                       <svg

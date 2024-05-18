@@ -153,3 +153,14 @@
  padding-left :100px;
  padding-right: 100px;
 }
+
+
+.ui.button.primary {
+  background-color: #3ea6ff;
+  color: white;
+}
+
+.ui.button.red {
+  background-color: #cc0000;
+  color: white;
+}
