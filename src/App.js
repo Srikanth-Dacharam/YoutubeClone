@@ -9,8 +9,7 @@ import Video from "./components/Video";
 function App() {
   return (
     <div className="App">
-      <Header />
-
+      <Header />/
       <div className="side">
         <Sidebar />
         <Routes>

@@ -100,7 +100,27 @@
 .sub{
   margin-top:50px;
   margin-left: 400px;
-  
+  border: black solid;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 267px;
+  width: 400px;
+}
+
+.like{
+  justify-content: space-between;
+  margin-top:50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border: black solid;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin-left: 350px;
+  width: 150px;
+}
+
+.video-deatails{
+  padding-left: 90px;
 }
 
 .video-img{
@@ -121,4 +141,15 @@
 .discription{
   font-size: 100%;
   width: 1000px;
+}
+
+.search{
+  margin-top: 60px;
+  margin-left: 600px;
+  
+}
+.search-input{
+  /* background-color: bisque; */
+ padding-left :100px;
+ padding-right: 100px;
 }
